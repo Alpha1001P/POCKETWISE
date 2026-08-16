@@ -1,0 +1,670 @@
+/* ==========================================
+   RECENT TRANSACTIONS
+========================================== */
+
+.recent-transactions-card {
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 26px;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, .08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 560px;
+
+    min-height: 0;
+
+    overflow: hidden;
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.recent-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    flex-shrink: 0;
+
+}
+
+
+.recent-header h2 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+}
+
+
+.recent-header p {
+
+    margin-top: 6px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+}
+
+
+.view-all-btn {
+
+    border: none;
+
+    background: none;
+
+    color: #4f46e5;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: .25s;
+
+}
+
+
+.view-all-btn:hover {
+
+    color: #312e81;
+
+}
+
+
+/* ==========================================
+   TRANSACTION LIST
+========================================== */
+
+.transaction-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding: 2px 8px 8px 2px;
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.transaction-list::-webkit-scrollbar {
+
+    width: 7px;
+
+}
+
+
+.transaction-list::-webkit-scrollbar-track {
+
+    background: #f1f5f9;
+
+    border-radius: 20px;
+
+}
+
+
+.transaction-list::-webkit-scrollbar-thumb {
+
+    background: #c7d2fe;
+
+    border-radius: 20px;
+
+}
+
+
+.transaction-list::-webkit-scrollbar-thumb:hover {
+
+    background: #818cf8;
+
+}
+
+
+/* Firefox */
+
+.transaction-list {
+
+    scrollbar-width: thin;
+
+    scrollbar-color: #c7d2fe #f1f5f9;
+
+}
+
+
+/* ==========================================
+   TRANSACTION ITEM
+========================================== */
+
+.transaction-item {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    border: 1px solid #edf2f7;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    overflow: visible;
+
+    flex-shrink: 0;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        margin .25s ease;
+
+    z-index: 1;
+
+}
+
+
+.transaction-item:hover {
+
+    transform: translateY(-2px);
+
+    background: #f8fbff;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, .08);
+
+}
+
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.transaction-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    min-width: 0;
+
+}
+
+
+.transaction-avatar {
+
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: 16px;
+
+    background: #eef4ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 26px;
+
+    flex-shrink: 0;
+
+}
+
+
+.transaction-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+}
+
+
+.transaction-details h4 {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+.transaction-details p {
+
+    margin-top: 6px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.transaction-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    flex-shrink: 0;
+
+}
+
+
+.amount {
+
+    min-width: 110px;
+
+    text-align: center;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+}
+
+
+.amount.income {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+}
+
+
+.amount.expense {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+
+/* ==========================================
+   META
+========================================== */
+
+.transaction-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.transaction-meta small {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+/* ==========================================
+   MENU
+========================================== */
+
+.menu-wrapper {
+    position: relative;
+    z-index: 20;
+}
+
+
+.menu-btn {
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f3f4f6;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    transition: .25s;
+}
+
+
+.menu-btn:hover {
+    background: #e5e7eb;
+}
+
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.menu-dropdown {
+
+    position: absolute;
+
+    right: 0;
+
+    width: 150px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, .18);
+
+    z-index: 99999;
+}
+
+
+/* Open downward */
+
+.menu-dropdown.bottom {
+
+    top: 44px;
+
+    bottom: auto;
+}
+
+
+/* Open upward */
+
+.menu-dropdown.top {
+
+    bottom: 44px;
+
+    top: auto;
+}
+
+
+.menu-dropdown button {
+
+    width: 100%;
+
+    border: none;
+
+    background: #ffffff;
+
+    text-align: left;
+
+    padding: 13px 16px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #374151;
+
+    transition: .2s;
+
+}
+
+
+.menu-dropdown button:hover {
+
+    background: #f8fafc;
+
+}
+
+
+.menu-dropdown button:first-child {
+
+    border-bottom: 1px solid #f1f5f9;
+}
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-transactions {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.empty-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #eef4ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.empty-transactions h3 {
+
+    font-size: 22px;
+
+    color: #111827;
+
+}
+
+
+.empty-transactions p {
+
+    margin-top: 10px;
+
+    color: #6b7280;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .recent-transactions-card {
+
+        height: 560px;
+
+        padding: 20px;
+
+    }
+
+
+    .transaction-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 16px;
+
+    }
+
+
+    .transaction-right {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+
+    .amount {
+
+        min-width: 90px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .recent-transactions-card {
+
+        height: 520px;
+
+        padding: 16px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .recent-header h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .recent-header p {
+
+        font-size: 12px;
+
+    }
+
+
+    .transaction-item {
+
+        padding: 15px;
+
+    }
+
+
+    .transaction-avatar {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 22px;
+
+    }
+
+
+    .transaction-details h4 {
+
+        font-size: 15px;
+
+    }
+
+
+    .transaction-details p {
+
+        font-size: 12px;
+
+    }
+
+
+    .transaction-right {
+
+        gap: 10px;
+
+    }
+
+}

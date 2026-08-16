@@ -1,0 +1,374 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:22px 28px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.06);
+
+    margin-bottom:28px;
+
+}
+
+.navbar-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.navbar-title{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#111827;
+
+}
+
+.navbar-subtitle{
+
+    margin-top:6px;
+
+    font-size:15px;
+
+    color:#6b7280;
+
+}
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/* =========================
+   ADD TRANSACTION BUTTON
+========================= */
+
+.add-transaction-btn{
+
+    border:none;
+
+    background:#16a34a;
+
+    color:#ffffff;
+
+    padding:12px 22px;
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.add-transaction-btn:hover{
+
+    background:#15803d;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.notification-wrapper{
+
+    position:relative;
+
+}
+
+.notification-button{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.notification-button:hover{
+
+    background:#eef2ff;
+
+    color:#4f46e5;
+
+}
+
+.notification-badge{
+
+    position:absolute;
+
+    top:-4px;
+
+    right:-4px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+/* =========================
+   NOTIFICATION DROPDOWN
+========================= */
+
+.notification-box{
+
+    position:absolute;
+
+    top:58px;
+
+    right:0;
+
+    width:340px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 18px 45px rgba(15,23,42,.12);
+
+    z-index:1000;
+
+}
+
+.notification-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.notification-top h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#111827;
+
+}
+
+.notification-top button{
+
+    border:none;
+
+    background:none;
+
+    color:#4f46e5;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.notification-item{
+
+    padding:14px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    transition:.25s;
+
+}
+
+.notification-item:hover{
+
+    background:#eef2ff;
+
+}
+
+.notification-item.unread{
+
+    border-left:4px solid #4f46e5;
+
+    background:#eef2ff;
+
+}
+
+.notification-item strong{
+
+    color:#111827;
+
+}
+
+.notification-item p{
+
+    margin:6px 0;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+.notification-item small{
+
+    color:#94a3b8;
+
+}
+
+.empty-notification{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    padding:20px 0;
+
+}
+
+.clear-notification{
+
+    width:100%;
+
+    margin-top:10px;
+
+    border:none;
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.clear-notification:hover{
+
+    background:#dc2626;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.navbar-right{
+
+width:100%;
+
+justify-content:space-between;
+
+}
+
+.notification-box{
+
+width:300px;
+
+right:0;
+
+}
+
+}
+/* ==========================================
+   WELCOME / GOOD EVENING CARD
+========================================== */
+
+.dashboard-welcome {
+    background: linear-gradient(
+        135deg,
+        #eef2ff 0%,
+        #f5f3ff 50%,
+        #eff6ff 100%
+    );
+
+    border: 1px solid #e0e7ff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(79, 70, 229, 0.08);
+}

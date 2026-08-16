@@ -1,0 +1,137 @@
+/* ==========================================
+   PREMIUM TOTAL NET WORTH CARD
+========================================== */
+
+.total-balance-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:24px;
+
+    height:190px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,.08);
+
+    transition:.25s ease;
+
+    overflow:hidden;
+
+}
+
+
+.total-balance-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 18px 40px rgba(15,23,42,.12);
+
+}
+
+
+/* TOP */
+
+.balance-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.balance-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:16px;
+
+    background:#dcfce7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+}
+
+
+/* LIVE */
+
+.balance-live{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+
+/* CONTENT */
+
+
+.balance-content{
+
+    margin-top:10px;
+
+}
+
+
+.balance-label{
+
+    font-size:14px;
+
+    color:#6b7280;
+
+    margin-bottom:5px;
+
+}
+
+
+.balance-amount{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    line-height:1;
+
+}
+
+
+.balance-description{
+
+    margin-top:8px;
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
